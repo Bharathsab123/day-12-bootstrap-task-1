@@ -1,0 +1,241 @@
+<!-- --------------------Survey Form------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Survey Form</title>
+</head>
+<form action="">
+<body class="bod">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<div class="container bg">
+  <!--------------------Input Name------------------------------ -->
+  <div class="row">
+    <div class="col-10">
+      <p><b>Name<sup>*</sup></b></p>
+      <input type="text" name="first" id="first" required>
+      <input type="text" name="last" id="last" required>
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10">
+      <label for="first">First</label>
+      <label for="last">Last</label>
+    </div>
+  </div>
+  <!-- --------------------INPUT Email--------------------------------------- -->
+  <div class="row">
+    <div class="col-10">
+      <p><b>Email<sup>*</sup></b></p>
+      <input type="email" id="email" name="email" required>
+    </div>
+  </div>
+  <!-- ---------------Star Rating------------------------------------------------- -->
+  <div class="row">
+    <div class="col">
+      <p><b>Your Experience<sup>*</sup></b></p>
+      <div class="rating">
+        <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label required>
+        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label required>
+        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label required>
+        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label required>
+        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label required>
+      </div>
+      <p>Overall.how would you rate your experience with us?</p>
+    </div>
+  </div>
+  <!-- ----------------Company satification----------------------------- -->
+  <div class="row">
+    <div class="col">
+      <p><b>How satisfied are you with<sup>*</sup></b></p>
+    </div>
+  </div>
+  <div class="row text">
+    <div class="col-2">
+    </div>
+    <div class="col-2">
+      <p>Very Unsatisfied</p>
+    </div>
+    <div class="col-2">
+      <p>Unsatisfied</p>
+    </div>
+    <div class="col-2">
+      <p>Neutral</p>
+    </div>
+    <div class="col-2">
+      <p>Satisfied</p>
+    </div>
+    <div class="col-2">
+      <p>Very Satisfied</p>
+    </div>
+  </div>
+  <div class="row line text">
+    <div class="col-2">
+      <h6>Purchase</h6>
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase" id="Very Unsatisfied" value="Very Unsatisfied">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase" id="Unsatisfied" value="Unsatisfied">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase" id="Neutral" value="Neutral">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase" id="Satisfied" value="Satisfied">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase" id="Very Satisfied" value="Very Satisfied">
+    </div>
+  </div>
+  <div class="row text">
+    <div class="col-2">
+      <h6>service</h6>
+    </div>
+    <div class="col-2">
+      <input type="radio" name="service" id="Very Unsatisfied" value="Very Unsatisfied">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="service" id="Unsatisfied" value="Unsatisfied">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="service" id="Neutral" value="Neutral">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="service" id="Satisfied" value="Satisfied">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="service" id="Very Satisfied" value=" Very Satisfied">
+    </div>
+  </div>
+  <div class="row line text" line>
+    <div class="col-2 " >
+      <h6>Company overall</h6>
+    </div>
+    <div class="col-2">
+      <input type="radio" name="overall" id="Very Unsatisfied" value="Very Unsatisfied">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="overall" id="Unsatisfied" value="Unsatisfied">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="overall" id="Neutral" value="Neutral">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="overall" id="satisfied" value="satisfied">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="overall" id="Very satisfied" value="Very satisfied">
+    </div>
+  </div>
+  <!-- -----------------Customer Satification -->
+  <div class="row">
+    <div class="col">
+      <p><b>How likely are you to<sup>*</sup></b></p>
+    </div>
+  </div>
+  <div class="row text ">
+    <div class="col-2 ">
+    </div>
+    <div class="col-2">
+      <p>Very Unlikely</p>
+    </div>
+    <div class="col-2">
+      <p>Unlikely</p>
+    </div>
+    <div class="col-2">
+      <p>Neutral</p>
+    </div>
+    <div class="col-2 ">
+      <p>Likely</p>
+    </div>
+    <div class="col-2 ">
+      <p>Very Likely</p>
+    </div>
+  </div>
+  <div class="row line text">
+    <div class="col-2">
+      <h6>Buy from us again</h6>
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase again" id="Very Unlikely" value="Very Unlikely">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase again" id="Unlikely" value="Unlikely">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase again" id="Neutral" value="Neutral">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase again" id="likely" value="likely">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Purchase again" id="Very likely" value="vary likely">
+    </div>
+  </div>
+  <div class="row text">
+    <div class="col-2">
+      <h6>Recommend our product to others</h6>
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Recommend our product" id="Very Unlikely" value="Very Unlikely">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Recommend our product" id="Unlikely" value="Unlikely">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Recommend our product" id="Neutral" value="Neutral">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Recommend our product" id="likely" value="likely">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Recommend our product" id="very likely" value="very likely">
+    </div>
+  </div>
+  <div class="row line text" line>
+    <div class="col-2 " >
+      <h6>Recommend our company to others</h6>
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Recommend our company" id="Very Unlikely" value="Very Unlikely">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Recommend our company" id="Unlikely" value="Unlikely">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Recommend our company" id="Neutral" value="Neutral">
+    </div>
+    <div class="col-2">
+      <input type="radio" name="Recommend our company" id="likely" value="likely">
+    </div>
+    <div class="col-2 ">
+      <input type="radio" name="Recommend our company" id="very likely" value="very likely">
+    </div>
+  </div>
+  <!-- --------------------command box-------------------------------------------- -->
+  <div class="row">
+    <div class="col">
+      <p><b>Additional comments or suggestions</b></p>
+      <textarea>
+        </textarea>
+    </div>
+  </div>
+  <!-- -------------Sumit button---------------------------------------- -->
+  <div class="row">
+    <div class="col">
+      <button type="submit">submit</button>
+    </div>
+  </div>
+ 
+</div>
+</body>
+</form>
+</html>
